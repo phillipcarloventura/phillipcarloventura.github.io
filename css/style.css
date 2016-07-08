@@ -1,0 +1,401 @@
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.cf:after,
+.cf:before {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.withBg {
+	overflow: hidden;
+	position: relative;
+	height: 620px;
+	background: url("../images/benguet.jpg") no-repeat 0 -250px;
+	background-attachment: fixed;
+	background-size: 100% auto;
+	text-align: center;
+}
+
+.sampleHover {
+	display: inline-block;
+	position: relative;
+	padding: 20px;
+	background: #fff;
+	color: #444;
+	z-index: 2;
+}
+
+.withBg2 {
+	position: relative;
+	padding: 40px 0 120px;
+	background: #f5f5f5;
+	box-shadow: 0px 2px 30px #333;
+}
+
+.overlay {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: block;
+	width: 35%;
+	height: 100px;
+	background: #f5f5f5;
+	z-index: 2;
+}
+
+.overlay:before {
+	top: 0;
+	left: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-left-color: #f5f5f5;
+	border-width: 200px;
+	z-index: 2;
+}
+
+
+.overlay:after {
+	top: 0;
+	left: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-left-color: #333;
+	opacity: 0.3;
+	border-width: 200px;
+	margin-left: 11px;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+}
+
+.whang_Od_profile {
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+
+.whang_Od_container {
+	position: relative;
+	width: 400px;
+	height: 350px;
+	overflow: hidden;
+	box-shadow: -2px 4px 16px #333;
+}
+
+.whang_Od {
+	text-indent: -9999px;
+	width: 400px;
+	height: 350px;
+	background: url("../images/whang_od_bef.png") no-repeat top left;
+	background-size: 100% auto;
+	transition: all 0.4s ease;
+}
+
+.whang_Od_desc {
+	width: 50%;
+	margin-left: 50px;
+}
+
+.whang_Od_container:hover .whang_Od {
+	background: url("../images/whang_od.jpg") no-repeat top left;
+	background-size: 100% auto;
+}
+
+.whang_Od_caption {
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	width: 100%;
+	padding: 20px 10px;
+	transition: all 0.4s ease;
+}
+
+.whang_Od_container:hover .whang_Od_caption {
+	margin-top: -80px;
+}
+
+.whang_Od_caption h1 {
+	font-size: 18px;
+}
+
+.whang_Od_caption p {
+	font-size: 11px;
+}
+
+.whang_Od_caption h1,
+.whang_Od_caption p {
+	color: #fff;
+	opacity: 0.8;
+}
+
+.title_profile {
+	position: fixed;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	height: 100%;
+	padding: 100px;
+	background: rgba(0,0,0,0.3);
+}
+
+.title_profile a {
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+	display: block;
+}
+
+.first_caption {
+	font-size: 56px;
+	color: #F0F0F0;
+	font-family: 'Indie Flower', cursive;
+
+}
+
+.mambabatok {
+	font-size: 80px;
+	color: #F0F0F0;
+}
+
+
+/*--flip--*/
+
+.flip-container {
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	-o-perspective: 1000;
+	perspective: 1000;
+}
+
+.flip-container:hover .flipper,  
+.flip-container.hover .flipper {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+
+	-o-transition: 0.6s;
+	-o-transform-style: preserve-3d;
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+	background: url("../images/profile_art.jpg") no-repeat center center;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	width: 120px;
+	height: 120px;
+	text-indent: -999px;
+	overflow: hidden;
+
+	background-size: cover;
+	z-index: 2;
+}
+
+.back {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	text-indent: -999px;
+	overflow: hidden;
+	background: url("../images/profile.jpg") no-repeat center center;
+	background-size: cover;
+
+}
+
+
+/*--end of flip--*/
+
+/*mini slider*/
+
+#example2 {
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+}
+#example2 .viewport {
+	position: relative;
+	width: 100%;
+	height: 150px;  /* you can define the height you want */
+	overflow: hidden;
+}
+
+#example2 .buttons {
+	display: block;
+	position: absolute;
+	line-height: 150px; /* in this case we use some height of viewport */
+	width: 30px;
+	top: 0; 
+	text-align: center;
+	z-index: 1;
+	background-color: #ebebeb;
+	border: 0;
+	cursor: pointer;
+	text-indent: -9999px;
+}
+
+#example2 .buttons i {
+	font-size: 18px;
+	color: #000;
+	line-height: 150px;
+}
+
+#example2 .overview {
+	position: absolute;
+	padding: 0 35px;
+	margin: 0;
+	left: 0;
+	top: 0;
+}
+
+#example2 .overview ul {
+	clear: both;
+	list-style: none;
+	height: 150px;
+	padding: 0;
+	line-height: 0;
+}
+
+#example2 li {
+	display: inline-block;
+	float: left;
+	margin: 0 7px;
+}
+
+.overview ul li img {
+	display: inline-block;
+	width: 186px;
+	height: 100%;
+	min-height: 150px;
+}
+
+.overview ul li img:hover {
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+	transition: all 0.6s ease;
+}
+
+
+#example2 .buttons.prev {
+	left: 0;     /* if you're using 'x' axis */
+	background: #fff url("../images/left.png") no-repeat center center;
+}
+#example2 .buttons.prev:hover {
+	background: #fcfcfc url("../images/left.png") no-repeat center center;
+}
+#example2 .buttons.next {
+	right: 0;    /* if you're using 'x' axis */
+	background: #fff url("../images/right.png") no-repeat center center;
+}
+
+#example2 .buttons.next:hover {
+	background: #fcfcfc url("../images/right.png") no-repeat center center;
+}
+
+/*------end of slider---------*/
+
+.name {
+	color: #222;
+	font-size: 200%;
+	opacity: 0.9;
+}
+
+.w {
+	text-shadow: -2px 2px 3px #9e9e9e;
+	font-size: 300%;
+	letter-spacing: -6px;
+	line-height: 1;
+}
+
+.name_p {
+	margin-bottom: 30px;
+	text-indent: 12px;
+	opacity: 0.6;
+}
+
+.name_d {
+	color: #222;
+	opacity: 0.8;
+	font-size: 120%;
+}
+
+.triangleBg {
+	overflow: hidden;
+	position: relative;
+	height: 800px;
+	background: url("../images/abstract3.png") no-repeat top left;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.overlay_2 {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 35%;
+	height: 100px;
+	background: #f5f5f5;
+	z-index: 2;
+}
+
+.overlay_2:before {
+	bottom: 0;
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-right-color: #f5f5f5;
+	border-width: 200px;
+	z-index: 2;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>practice 101</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/hover.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/swipebox.css">
+		<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+		<script src="js/common.js" type="text/javascript"></script>
+	</head>
+	<body>
+<!--
+		<div class="wrap">
+			<div class="container">
+				<button class="date">Click me!</button>
+				<p class="dateFeedback fdbk"></p>
+			</div>
+			<div class="container">
+				<p><img src="images/bulbOff.gif" class="bulb" width="100" height="180" alt="####"></p>
+			</div>
+			<div class="container">
+				<p>Enter number from 1 to 10</p>
+				<input type="text" class="inputNum" maxlength="2"><button class="submitNum">submit</button>
+				<p class="inputNumFeedback fdbk"></p>
+			</div>
+			<div class="container">
+				<ul class="sampleList">
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">CONTACT US</a></li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="boxHello">
+					<h1 class="textHello">HELLO</h1>
+				</div>
+			</div>
+		</div>
+-->
+		<div class="withBg">
+			<div class="title_profile">
+				<a href="#whang_Od_con">
+					<div class="flip-container wow fadeInUp hvr-pulse">
+						<div class="flipper">
+							<div class="front">Whang Od</div>
+							<div class="back">Whang Od Art</div>
+						</div>
+					</div>
+				</a>
+				<p class="first_caption wow zoomIn">The last <span class="mambabatok">"Mambabatok"</span></p>
+			</div>
+			
+			<div class="overlay"></div>
+		</div>
+		<div class="withBg2" id="whang_Od_con">
+			<div class="container">
+				<div class="whang_Od_profile cf">
+					<div class="whang_Od_container fl">
+						<div class="whang_Od">image of Whang Od</div>
+						<div class="whang_Od_caption">
+							<h1>Whang Od</h1>
+							<p><i>"The Kalinga Tattoo maker"</i></p>
+						</div>
+					</div>
+					
+					<div class="fl whang_Od_desc">
+						<h2 class="name wow fadeInDown"><i class="w">W</i>hang Od</h2>
+						<p class="name_p">/wang, ud/</p>
+						<p class="name_d wow slideInUp">Whang Od is 92 years old and she is the last Kalinga tattoo maker, according to specialists this practice is about a thousand years old and was used as a skin natural language transmitted from generation to generation. However, Whang Od hasn&#39;t got a family that can inherit her art, she lost her boyfriend when she was 25 years old and never matched up again.</p>
+					</div>
+				</div>
+
+				<div class="sample" id="example2">
+					<div class="viewport">
+						<input type="button" class="buttons prev" value="prev">
+						<div class="overview">
+							<ul>
+								<li class="box"><a href="images/image1.jpg" class="swipebox" title="Apo Whang Od Tattooing"><img src="images/image1.jpg"></a></li>
+								<li class="box"><a href="images/image8.jpg" class="swipebox" title="Apo Whang Od Tattooing &#34;kinilat&#34; "><img src="images/image8.jpg"></a></li>
+								<li class="box"><a href="images/image2.jpg" class="swipebox" title="Apo Whang Od Tattooing &#34;chaklag&#34; "><img src="images/image2.jpg"></a></li>
+								<li class="box"><a href="images/image3.jpg" class="swipebox" title="Apo Whang Od Tattooing"><img src="images/image3.jpg"></a></li>
+								<li class="box"><a href="images/image4.jpg" class="swipebox" title="Apo Whang Od Tattooing &#34;pinyat&#34;"><img src="images/image4.jpg"></a></li>
+								<li class="box"><a href="images/image5.jpg" class="swipebox" title="Apo Whang Od Tattooing &#34;batek&#34;"><img src="images/image5.jpg"></a></li>
+								<li class="box"><a href="images/image6.jpg" class="swipebox" title="Apo Whang Od Tattooing"><img src="images/image6.jpg"></a></li>
+								<li class="box"><a href="images/image7.jpg" class="swipebox" title="Hand of Apo Whang Od"><img src="images/image7.jpg"></a></li>
+								<li class="box"><a href="images/image9.jpg" class="swipebox" title="Apo Whang Od Tattooing"><img src="images/image9.jpg"></a></li>
+								<li class="box"><a href="images/image10.jpg" class="swipebox" title="Apo Whang Od Tattooing"><img src="images/image10.jpg"></a></li>
+								<li class="box"><a href="images/image11.jpg" class="swipebox" title="Apo Whang Od Tattooing"><img src="images/image11.jpg"></a></li>
+							</ul>
+						</div>
+						<input type="button" class="buttons next" value="next">
+					</div>
+				</div>
+			</div>
+			
+		</div><!-- /.withBg2-->
+		
+		<div class="triangleBg">
+			<div class="overlay_2"></div>
+		</div>
+
+	
+		
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	
+		<script src="js/jquery.bway.imageslider.min.js"></script><!-- for slider-->
+		<script src="js/common.js"></script>
+		
+		<script src="js/wow.min.js"></script><!-- for animation-->
+		<!-- for slider settings-->
+		<script type="text/javascript">
+			$(document).on('ready', function(){
+
+				$('#example2').bwayImageSlider({
+					axis       : 'x',  // default 'x'
+					itemMargin : 14,   // margin between items, default 10
+					speed      : 400,  // miliseconds, default 1500
+					loop       : true
+				});
+			});
+		</script>
+		<script src="js/jquery.swipebox.js"></script>
+		<script type="text/javascript">
+			;( function( $ ) {
+
+				$( '.swipebox' ).swipebox();
+
+			} )( jQuery );
+		</script>
+	</body>
+</html>
